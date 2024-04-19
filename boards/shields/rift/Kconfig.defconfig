@@ -1,0 +1,16 @@
+if SHIELD_RIFT_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "RIFT"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif # LEFT
+
+if SHIELD_RIFT_LEFT || SHIELD_RIFT_RIGHT
+
+    config ZMK_SPLIT
+        default y
+
+endif

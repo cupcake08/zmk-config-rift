@@ -1,0 +1,13 @@
+file_format: "1"
+id: mars
+name: RIFT
+type: shield
+url: https://github.com/cupcake08/Rift
+requires: [seeed_xiao]
+features:
+  - keys
+  - display
+  - encoder
+siblings:
+  - rift_left
+  - rift_right
