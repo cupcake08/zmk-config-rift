@@ -9,9 +9,6 @@
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
-// Layer tap macro
-#define IK(index, key) &lt index key
-
 / {
     behaviors {
         ht: hold_tap {
@@ -49,7 +46,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                  &trans     IK(2,TAB)  &kp ENTER      &kp SPACE  IK(1,BSPC) &trans
+                                  &trans     &lt 2 TAB  &kp ENTER      &kp SPACE  &lt 1 BSPC &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
 
